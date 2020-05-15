@@ -3,18 +3,21 @@
     <head>
         <title>Конвертер температур</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body onload="digitalWatch()">
         
         <header>
+<!--
             <div class = imgLogo >
-                <img src="images/logo.png" alt="Your helper" style = "width: 120px">
+                <img src="images/logo.png" alt="Your helper" class="adaptiveImage">
             </div>
+-->
             
             <div class = inHeader>
                 <h1 id="title">Простой конвертер величин температур</h1>
-                <h2>Перевод между Кельвинами , Цельсиями и Фаренгейтами</h2>
+                <h3>Перевод между Кельвинами , Цельсиями и Фаренгейтами</h3>
             </div>
             
         </header>
@@ -34,25 +37,35 @@
                     релевантными в повседневной жизни являются шкалы Цельсия и Фаренгейта. Шкала Цельсия ориентируется на точки замерзания и 
                     закипания воды, принимающие значения 0 и 100 градусов соответственно.</p>
 
-                <h3><b>
+                <h3 id="warning" ><b>
                     Обратите внимание, что существует абсолютный ноль - минимальная возможная температура - 0K (-459.67°F, -273.15°C).<br>
                     Ниже этого значения температуры не существует. По крайней мере, в нашей Вселенной.
                 </b></h3>
 
-                <div>градус Цельсия (°C) <input type="text" id="cTemp" onclick="reset()" onkeypress="calculateFK(event)" size = "20"> 
+                <div style="margin: 0 auto ; text-align: center;">Цельсий(°C) <input type="text" id="cTemp" onclick="reset()" onkeypress="calculateFK(event)" size = "4"> 
 
-                    градус Фаренгейта (°F)<input type="text" id="fTemp" onclick="reset()" onkeypress="calculateCK(event)" size="20">
+                    Фаренгейт(°F)<input type="text" id="fTemp" onclick="reset()" onkeypress="calculateCK(event)" size="4">
 
-                    Кельвины <input type="text" id="kTemp" onclick="reset()" onkeypress="calculateCF(event)" size="20"></div>
+                    Кельвин <input type="text" id="kTemp" onclick="reset()" onkeypress="calculateCF(event)" size="4">
                 </div>
+                
+                <h3>
+                    Нажмите ENTER
+                </h3>
+                
+                
+                </div>
+                
+                
+            
         </main>
         
         <footer>
-            <div>
-                <h1 align = center>Формулы</h1>
-                <img src="formulas/C.png" alt="C" style="height:50px">
-                <img src="formulas/F.png" alt="F" style="height:50px">
-                <img src="formulas/K.png" alt="K" style="height:50px">
+            <div style="text-align: center ; margin: 0 auto">
+                <h1>Формулы</h1>
+                <img  src="formulas/C.png" alt="C" >
+                <img  src="formulas/F.png" alt="F" >
+                <img  src="formulas/K.png" alt="K" >
             </div>
             
         </footer>
