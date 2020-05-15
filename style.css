@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;    
+    background: rgba(255,239,212,1) ;
+    font-family: Geneva, Arial, Helvetica, sans-serif
+}
+
+header{
+    background: rgb(255,158,0);
+    background: linear-gradient(180deg, rgba(255,158,0,1) 0%, rgba(255,167,25,1) 100%);
+    width: 60%;
+    height: 150px;
+    border-radius: 0 0 35px 35px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 0 0 0 20%;
+    display: inline-block ;
+    box-sizing: border-box;
+    
+}
+
+main{
+    background: rgb(255,167,25);
+    background: linear-gradient(180deg, rgba(255,167,25,1) 0%, rgba(255,181,61,1) 100%);
+    width: 60%;
+    height: 430px;
+    border-radius:70px;
+    border: 2px solid black;
+    margin: 45px 20% 0 20%;
+    padding: 45px; 
+    box-sizing: border-box ;
+}
+
+footer{
+    background: rgb(255,181,61);
+    background: linear-gradient(180deg, rgba(255,181,61,1) 0%, rgba(255,196,101,1) 100%);
+    width: 60%;
+    height: 250px;
+    border-radius:70px;
+    border: 2px solid black;
+    margin: 45px 20% 0 20%;
+    box-sizing: border-box;
+    padding: 40px 150px 0 150px ;
+}
+
+.imgLogo{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+.inHeader{
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+    margin: 6px 0 0 80px; 
+}
+
+#div_buttons{
+    text-align: center;
+    
+}
+
+h3:hover{
+    color: red ;
+    cursor: pointer;
+}
+
+input{
+    font-size: 16px;
+}
+
+#digital_watch{
+letter-spacing: 5px;
+font-size: 30px;
+border: 2px solid black;
+padding: 10px;
+width: 160px;
+box-shadow: 5px 5px 5px #BCCCCF,
+-1px -1px 2px #BCCCCF;
+display: inline-block;
+margin: 50px 0 0 5%;
+vertical-align: top;
+}
+
+
+

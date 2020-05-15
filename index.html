@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Конвертер температур</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body onload="digitalWatch()">
+        
+        <header>
+            <div class = imgLogo >
+                <img src="images/logo.png" alt="Your helper" style = "width: 120px">
+            </div>
+            
+            <div class = inHeader>
+                <h1 id="title">Простой конвертер величин температур</h1>
+                <h2>Перевод между Кельвинами , Цельсиями и Фаренгейтами</h2>
+            </div>
+            
+        </header>
+        
+       
+            <div style="background:rgb(255,167,25) " id="digital_watch"></div>
+       
+        
+        <main>
+            <div style="background:#e59719 ; border-radius: 40px; padding: 3px 17px 17px 17px ;border: 1px solid black;">
+                    <h1 align = center >Температурные шкалы</h1>
+                    <p> С помощью данного онлайн конвертереа температут вы сможете легко о  существить перевод между единицами разных величин температур .
+                    Температура представляет собой физическую величину , измеряющую условное количесвто тепла в окружающей среде или определенном
+                    теле.Наиболее точной считается шкала Кельвина, берущая начало от абсолютного нуля, ниже которого температура быть не может.> 
+                    Исходя из этого, температурная шкала Кельвина называется абсолютной, так как принимает только положительные значения. Более
+                    релевантными в повседневной жизни являются шкалы Цельсия и Фаренгейта. Шкала Цельсия ориентируется на точки замерзания и 
+                    закипания воды, принимающие значения 0 и 100 градусов соответственно.</p>
+
+                <h3><b>
+                    Обратите внимание, что существует абсолютный ноль - минимальная возможная температура - 0K (-459.67°F, -273.15°C).<br>
+                    Ниже этого значения температуры не существует. По крайней мере, в нашей Вселенной.
+                </b></h3>
+
+                <div>градус Цельсия (°C) <input type="text" id="cTemp" onclick="reset()" onkeypress="calculateFK(event)" size = "20"> 
+
+                    градус Фаренгейта (°F)<input type="text" id="fTemp" onclick="reset()" onkeypress="calculateCK(event)" size="20">
+
+                    Кельвины <input type="text" id="kTemp" onclick="reset()" onkeypress="calculateCF(event)" size="20"></div>
+                </div>
+        </main>
+        
+        <footer>
+            <div>
+                <h1 align = center>Формулы</h1>
+                <img src="formulas/C.png" alt="C" style="height:50px">
+                <img src="formulas/F.png" alt="F" style="height:50px">
+                <img src="formulas/K.png" alt="K" style="height:50px">
+            </div>
+            
+        </footer>
+        
+        <script type = "text/javascript" src ="main.js"></script>
+        
+    </body>
+    
+</html>
+    
