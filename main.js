@@ -25,7 +25,7 @@ function calculateCK(e){ // Из фаренгейтов в цельсии и к�
             var prost = (fTemp - 32) / 1.8 ;
             document.getElementById("cTemp").value = prost.toFixed(1);
             prost = prost + 273.16 ; 
-            document.getElementById("kTemp").value.toFixed(1) = prost.toFixed(1);
+            document.getElementById("kTemp").value = prost.toFixed(1);
         };
     }
 };
